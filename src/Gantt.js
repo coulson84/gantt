@@ -8,7 +8,10 @@
  */
 import './gantt.scss';
 
+import Snap from 'snapsvg';
+import moment from 'moment';
 import merge from 'deepmerge';
+
 import Bar from './Bar';
 import Arrow from './Arrow';
 
@@ -529,6 +532,9 @@ export default function Gantt(element, tasks, config = {}) {
 		self.canvas.selectAll('.bar-wrapper').forEach(el => {
 			el.removeClass('active');
 		});
+
+		self.trigger_event('unselect_all', []);
+
 	}
 
 	function view_is(modes) {

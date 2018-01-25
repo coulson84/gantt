@@ -6,6 +6,7 @@
 		gt: Gantt object
 		task: task object
 */
+import Snap from 'snapsvg';
 
 export default function Bar(gt, task) {
 
