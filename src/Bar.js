@@ -159,7 +159,7 @@ export default function Bar(gt, task) {
 			});
 		}
 
-		self.group.click((e) => {
+		self.group.hover((e) => {
 			if (self.action_completed) {
 				// just finished a move action, wait for a few seconds
 				return;
