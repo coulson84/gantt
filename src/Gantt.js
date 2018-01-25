@@ -8,6 +8,7 @@
  */
 import './gantt.scss';
 
+import merge from 'deepmerge';
 import Bar from './Bar';
 import Arrow from './Arrow';
 
@@ -31,8 +32,6 @@ export default function Gantt(element, tasks, config = {}) {
 	}
 
 	function set_defaults() {
-
-		const merge = require('deepmerge');
 
 		const defaults = {
 			header_height: 50,
